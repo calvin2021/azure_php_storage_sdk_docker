@@ -1,0 +1,11 @@
+version: "3.0"
+
+services:
+  php:
+    build: .
+    volumes:
+      - ./source:/home/app
+    environment:
+      - ACCOUNT_NAME=<your account name>
+      - ACCOUNT_KEY=<your account key>
+    restart: always
