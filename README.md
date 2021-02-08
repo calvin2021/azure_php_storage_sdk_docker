@@ -1,19 +1,25 @@
 # azuer_php_sdk_docker
 
-this is based on azuer storage sdk. upload file to azure blob.
+This is a sample for uploading the file to azure blob which is based on azure storage sdk.
 
 # step:
-####1.change blob user and key in docker-composer.yml
-####2.run command
+#### 1.modify the blob user name and key in docker-composer.yml
+#### 2.run command
 ```
 docker-compose up -d
 ```
-####3.login docker
-####4.run command
+#### 3.login docker
+#### 4.run command
 ```
 composer install
 ```
-####5.exec the program
+#### 5.modify the blob container name in the file samples/lytech.php
+
 ```
-php sample/lytech.php
+$container = '<container name>';
+```
+
+#### 6.exec the program
+```
+php samples/lytech.php
 ```

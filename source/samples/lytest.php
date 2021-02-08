@@ -10,7 +10,7 @@ use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 $connectionString = "DefaultEndpointsProtocol=https;AccountName=".getenv('ACCOUNT_NAME').";AccountKey=".getenv('ACCOUNT_KEY');
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
-$container = "poktest";
+$container = "<container name>";
 $blobFile = 'ly.csv';
 
 $content = fopen($blobFile, "r");
